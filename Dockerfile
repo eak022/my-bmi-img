@@ -20,7 +20,7 @@ FROM nginx:1.25.0-alpine AS production-stage
 
 WORKDIR /usr/share/nginx/html
 
-#remove all default files nginx 
+#remove all default files nginx
 RUN rm -rf ./*
 
 #copy nginx.conf
